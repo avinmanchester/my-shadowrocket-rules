@@ -1,0 +1,26 @@
+# Claude-Rules.yaml
+# Shadowrocket 远程 RULE-SET 使用的 YAML 规则集
+# 保留原始 17 条匹配规则，未新增或删除域名
+payload:
+  # 精确匹配域名
+  - DOMAIN,browser-intake-us5-datadoghq.com
+  - DOMAIN,cdn.usefathom.com
+  # 第三方监控、分析与功能服务
+  - DOMAIN-SUFFIX,siftscience.com
+  - DOMAIN-SUFFIX,datadoghq.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,statsigapi.net
+  - DOMAIN-SUFFIX,launchdarkly.com
+  - DOMAIN-SUFFIX,segment.io
+  # Claude / Anthropic 业务域名
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,8-lives-cat.io
+  # Claude 内容相关域名
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,claudemcpcontent.com
+  - DOMAIN-SUFFIX,anthropicusercontent.com
+  # 第三方验证与身份认证服务
+  - DOMAIN-SUFFIX,arkoselabs.com
+  - DOMAIN-SUFFIX,auth0.com
